@@ -14,6 +14,6 @@ export async function post({ body }) {
       },
     };
   } catch (error) {
-    console.error(`Error in route api/upload-url.json: ${error}`);
+    console.error(`Error in route api/presigned-urls.json: ${error}`);
   }
 }

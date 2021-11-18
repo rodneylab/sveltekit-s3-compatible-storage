@@ -10,7 +10,7 @@
   let uploadComplete = false;
   let files = [];
   let errors = { files: null };
-  let downdloadUrl = '';
+  let downloadUrl = '';
   $: filename = files.length > 0 ? files[0].name : '';
 
   function resetForm() {
@@ -44,7 +44,7 @@
       });
       const json = await response.json();
       const { readSignedUrl, writeSignedUrl } = json;
-      downdloadUrl = readSignedUrl;
+      downloadUrl = readSignedUrl;
 
       // Upload file
       const reader = new FileReader();
@@ -81,7 +81,7 @@
     <section class="upload-complete">
       <h2 class="heading">Upload complete</h2>
       <p class="filename">
-        Download link: <a aria-label={`Download ${filename}`} href={downdloadUrl}>{filename}</a>
+        Download link: <a aria-label={`Download ${filename}`} href={downloadUrl}>{filename}</a>
       </p>
       <div class="button-container">
         <button
