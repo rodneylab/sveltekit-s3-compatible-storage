@@ -1,7 +1,7 @@
 import { presignedUrls } from '$lib/utilities/storage';
 
-export async function post({ body }) {
-  const { key } = body;
+export async function post({ request }) {
+  const { key } = await request.json();
 
   try {
     const { readSignedUrl, writeSignedUrl } = await presignedUrls(key);
