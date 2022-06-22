@@ -1,6 +1,8 @@
 {
   "name": "sveltekit-s3-compatible-storage",
   "version": "0.0.1",
+  "license": "BSD-3-Clause",
+  "description": "SvelteKit S3 compatible storage: how you can upload files to your cloud storage provider from your Svelte app using presigned URLs.",
   "scripts": {
     "dev": "svelte-kit dev --port 3000 --https",
     "build": "svelte-kit build",
@@ -34,6 +36,13 @@
     "stylelint-config-standard": "^26.0.0",
     "svelte": "^3.48.0",
     "svelte-check": "^2.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodneylab/sveltekit-s3-compatible-storage"
+  },
+  "bugs": {
+    "url": "https://github.com/rodneylab/sveltekit-s3-compatible-storage/issues"
   },
   "type": "module"
 }
