@@ -11,7 +11,7 @@
 
 # sveltekit-s3-compatible-storage
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/rodneylab/sveltekit-s3-compatible-storage)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/sveltekit-s3-compatible-storage)
 
 Demo code for using S3 compatible storage with SvelteKit. The code accompanies the <a aria-label="Open Rodney Lab blog post on using S3 compatible storage with Svelte Kit" href="https://rodneylab.com/sveltekit-ss3-compatible-storage/">video on uploading small files to S3 compatible storage using a SvelteKit app</a>. If you have any questions, please drop a comment at the bottom of that page.
 
@@ -33,3 +33,5 @@ pnpm run build
 ```
 
 > You can preview the built app with `pnpm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+
+Feel free to jump into the [Rodney Lab matrix chat room](https://matrix.to/#/%23rodney:matrix.org).
