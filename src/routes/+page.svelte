@@ -1,6 +1,6 @@
 <script>
-  import '@fontsource/rajdhani';
   import '@fontsource/libre-franklin';
+  import '@fontsource/rajdhani';
 
   const H_ELLIPSIS_ENTITY = '\u2026'; // ...
   const LEFT_DOUBLE_QUOTE_ENTITY = '\u201c'; // "
