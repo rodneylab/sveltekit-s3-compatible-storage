@@ -1,4 +1,5 @@
 <script>
+	import '$lib/styles/global.css';
 	import '@fontsource/libre-franklin';
 	import '@fontsource/rajdhani';
 
@@ -68,7 +69,6 @@
 
 <svelte:head>
 	<title>SvelteKit S3 Compatible Storage</title>
-	<html lang="en-GB" />
 	<meta
 		name="description"
 		content="Upload a file to third party storage using an S3 compatible API in SvelteKit."
@@ -136,28 +136,6 @@
 </main>
 
 <style>
-	:global(html) {
-		background-image: linear-gradient(
-			to top right,
-			var(--colour-theme-lighten-20),
-			var(--colour-theme)
-		);
-		color: var(--colour-light);
-
-		font-family: Libre Franklin;
-	}
-
-	:global(:root) {
-		--colour-theme: #3185fc; /* azure */
-		--colour-theme-lighten-20: #4599ff;
-		--colour-light: #fafaff; /* ghost white */
-		--colour-light-opacity-85: #fafaffd9;
-		--colour-dark: #403f4c; /* dark liver */
-		--colour-feature: #f9dc5c; /* naples yellow */
-		--colour-alternative: #e84855; /* red crayola */
-		--font-weight-medium: 500;
-	}
-
 	.screen-reader-text {
 		border: 0;
 		clip: rect(1px, 1px, 1px, 1px);
