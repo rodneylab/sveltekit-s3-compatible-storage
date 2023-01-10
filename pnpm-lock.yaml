@@ -13,7 +13,6 @@ specifiers:
   '@vitejs/plugin-basic-ssl': ^1.0.1
   commitlint: ^17.4.1
   cuid: ^2.1.8
-  dotenv: ^16.0.3
   eslint: ^8.31.0
   eslint-config-prettier: ^8.6.0
   eslint-plugin-svelte3: ^4.0.0
@@ -42,7 +41,6 @@ devDependencies:
   '@vitejs/plugin-basic-ssl': 1.0.1_vite@4.0.4
   commitlint: 17.4.1
   cuid: 2.1.8
-  dotenv: 16.0.3
   eslint: 8.31.0
   eslint-config-prettier: 8.6.0_eslint@8.31.0
   eslint-plugin-svelte3: 4.0.0_6go7qzsvzihesfwmyvq3tnl5qq
@@ -2366,11 +2364,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       is-obj: 2.0.0
-    dev: true
-
-  /dotenv/16.0.3:
-    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
-    engines: {node: '>=12'}
     dev: true
 
   /duplexer2/0.1.4:

@@ -1,12 +1,13 @@
+import {
+	S3_COMPATIBLE_ACCOUNT_AUTH_TOKEN,
+	S3_COMPATIBLE_ACCOUNT_ID,
+	S3_COMPATIBLE_BUCKET_NAME,
+} from '$env/static/private';
 import { GetObjectCommand, PutObjectCommand, S3 } from '@aws-sdk/client-s3';
 import { S3RequestPresigner } from '@aws-sdk/s3-request-presigner';
 import { createRequest } from '@aws-sdk/util-create-request';
 import { formatUrl } from '@aws-sdk/util-format-url';
 import cuid from 'cuid';
-
-const S3_COMPATIBLE_BUCKET = process.env['S3_COMPATIBLE_BUCKET_NAME'];
-const S3_COMPATIBLE_ACCOUNT_AUTH_TOKEN = process.env['S3_COMPATIBLE_ACCOUNT_AUTH_TOKEN'];
-const S3_COMPATIBLE_ACCOUNT_ID = process.env['S3_COMPATIBLE_ACCOUNT_ID'];
 
 async function authoriseAccount() {
 	try {
@@ -72,7 +73,7 @@ function getS3Client({ s3ApiUrl }) {
 }
 
 async function generatePresignedUrls({ key, s3ApiUrl }) {
-	const Bucket = S3_COMPATIBLE_BUCKET;
+	const Bucket = S3_COMPATIBLE_BUCKET_NAME;
 	const Key = key;
 	const client = getS3Client({ s3ApiUrl });
 

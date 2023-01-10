@@ -26,7 +26,6 @@
 		"@vitejs/plugin-basic-ssl": "^1.0.1",
 		"commitlint": "^17.4.1",
 		"cuid": "^2.1.8",
-		"dotenv": "^16.0.3",
 		"eslint": "^8.31.0",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-svelte3": "^4.0.0",
