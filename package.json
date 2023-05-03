@@ -22,6 +22,7 @@
 		"@commitlint/config-conventional": "^17.6.1",
 		"@fontsource/libre-franklin": "^4.5.11",
 		"@fontsource/rajdhani": "^4.5.10",
+		"@paralleldrive/cuid2": "^2.2.0",
 		"@sveltejs/kit": "1.15.10",
 		"@vitejs/plugin-basic-ssl": "^1.0.1",
 		"commitlint": "^17.6.1",
