@@ -34,9 +34,6 @@ devDependencies:
   commitlint:
     specifier: ^17.6.1
     version: 17.6.1
-  cuid:
-    specifier: ^2.1.8
-    version: 2.1.8
   eslint:
     specifier: ^8.39.0
     version: 8.39.0
@@ -2295,11 +2292,6 @@ packages:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
-    dev: true
-
-  /cuid@2.1.8:
-    resolution: {integrity: sha512-xiEMER6E7TlTPnDxrM4eRiC6TRgjNX9xzEZ5U/Se2YJKr7Mq4pJn/2XEHjl3STcSh96GmkHPcBXLES8M29wyyg==}
-    deprecated: Cuid and other k-sortable and non-cryptographic ids (Ulid, ObjectId, KSUID, all UUIDs) are all insecure. Use @paralleldrive/cuid2 instead.
     dev: true
 
   /dargs@7.0.0:

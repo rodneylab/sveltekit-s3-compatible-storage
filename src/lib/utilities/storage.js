@@ -7,7 +7,7 @@ import { GetObjectCommand, PutObjectCommand, S3 } from '@aws-sdk/client-s3';
 import { S3RequestPresigner } from '@aws-sdk/s3-request-presigner';
 import { createRequest } from '@aws-sdk/util-create-request';
 import { formatUrl } from '@aws-sdk/util-format-url';
-import cuid from 'cuid';
+import { createId } from '@paralleldrive/cuid2';
 
 async function authoriseAccount() {
 	try {
@@ -61,7 +61,7 @@ function getS3Client({ s3ApiUrl }) {
 	const credentials = {
 		accessKeyId: S3_COMPATIBLE_ACCOUNT_ID,
 		secretAccessKey: S3_COMPATIBLE_ACCOUNT_AUTH_TOKEN,
-		sessionToken: `session-${cuid()}`,
+		sessionToken: `session-${createId()}`,
 	};
 
 	const S3Client = new S3({
