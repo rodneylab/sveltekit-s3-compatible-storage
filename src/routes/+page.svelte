@@ -7,12 +7,12 @@
 	const LEFT_DOUBLE_QUOTE_ENTITY = '\u201c'; // "
 	const RIGHT_DOUBLE_QUOTE_ENTITY = '\u201d'; // "
 
-	let isSubmitting = false;
-	let uploadComplete = false;
-	let files = [];
-	let errors = { files: null };
-	let downloadUrl = '';
-	$: filename = files.length > 0 ? files[0].name : '';
+	let isSubmitting = $state(false);
+	let uploadComplete = $state(false);
+	let files = $state([]);
+	let errors = $state({ files: null });
+	let downloadUrl = $state('');
+	let filename = $derived(files.length > 0 ? files[0].name : '');
 
 	function resetForm() {
 		files = [];
@@ -24,7 +24,8 @@
 		files = event.target.files;
 	};
 
-	const handleSubmit = async () => {
+	const handleSubmit = async (event) => {
+		event.preventDefault();
 		try {
 			if (files.length === 0) {
 				errors.files = 'Select a file to upload first';
@@ -86,7 +87,7 @@
 			<div class="button-container">
 				<button
 					class="another-upload-button"
-					on:click={() => {
+					onclick={() => {
 						uploadComplete = false;
 						resetForm();
 					}}>Upload another file</button
@@ -95,7 +96,7 @@
 		</section>
 	{:else}
 		<section class="upload">
-			<form on:submit|preventDefault={handleSubmit}>
+			<form onsubmit={handleSubmit}>
 				<h2 class="heading">Upload a file{H_ELLIPSIS_ENTITY}</h2>
 				{#if filename !== ''}
 					<p class="filename">{filename}</p>
@@ -109,7 +110,7 @@
 					</div>
 				{/if}
 				{#if isSubmitting}
-					<small id="files-error">Uploading{H_ELLIPSIS_ENTITY}</small>
+					<small>Uploading{H_ELLIPSIS_ENTITY}</small>
 				{/if}
 				<div class="file-input-container">
 					<label class="file-input-label" for="file"
@@ -124,7 +125,7 @@
 						formenctype="multipart/form-data"
 						accept="image/*"
 						title="File"
-						on:change={handleChange}
+						onchange={handleChange}
 					/>
 					<div class="button-container">
 						<button type="submit" disabled={isSubmitting}>Upload</button>
