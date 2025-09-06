@@ -13,7 +13,7 @@
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/sveltekit-s3-compatible-storage)
 
-Demo code for using S3 compatible storage with SvelteKit. The code accompanies the <a aria-label="Open Rodney Lab blog post on using S3 compatible storage with Svelte Kit" href="https://rodneylab.com/sveltekit-ss3-compatible-storage/">video on uploading small files to S3 compatible storage using a SvelteKit app</a>. If you have any questions, please drop a comment at the bottom of that page.
+Demo code for using S3 compatible storage with SvelteKit. The code accompanies the <a aria-label="Open Rodney Lab blog post on using S3 compatible storage with Svelte Kit" href="https://rodneylab.com/sveltekit-s3-compatible-storage/">video on uploading small files to S3 compatible storage using a SvelteKit app</a>. If you have any questions, please drop a comment at the bottom of that page.
 
 ## Building and previewing the site
 
